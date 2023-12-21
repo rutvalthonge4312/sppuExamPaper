@@ -1,0 +1,56 @@
+.container{
+  display:  grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+body{
+  background-color: rgb(231, 231, 231);
+
+}
+.card{
+  border: none;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+.card:hover{
+  transform: scale(1.02);
+  transition: all ease-in-out 0.2s;
+}
+.card .btn{
+  width: 50%;
+}
+.input-select{
+  margin: 1rem;
+}
+@media screen and (max-width:800px) {
+  .container{
+    display:  grid;
+    grid-template-columns: 1fr;
+    border: 1px solid red;
+    width: auto;
+    gap: 1rem;
+  }
+  .card .btn{
+    width: 100%;
+  }
+}
+@media screen and (min-width:801px) and (max-width:1100px) {
+  h1{
+    font-size: 1.8rem;
+    margin-bottom:1rem ;
+  }
+  .card{
+    width: 100%;
+  }
+  .card .btn{
+    width: 100%;
+  }
+}
+@media screen and (min-width:1101px) {
+  .card .btn{
+    width: 50%;
+  }
+}
