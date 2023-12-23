@@ -29,7 +29,7 @@ body{
   .container{
     display:  grid;
     grid-template-columns: 1fr;
-    border: 1px solid red;
+   
     width: auto;
     gap: 1rem;
   }
@@ -53,4 +53,12 @@ body{
   .card .btn{
     width: 50%;
   }
+}
+.dark{
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+.darkCard{
+  background-color: rgb(139, 139, 139);
+  color: rgb(255, 255, 255);
 }
